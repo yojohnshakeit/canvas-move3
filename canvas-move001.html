@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>canvas-move</title>
+    </head>
+    <body>
+        <canvas id="canvas" width ="800" height="1100"></canvas>
+        <script>
+            window.addEventListener("load", ()=>{
+                let canvas = document.getElementById("canvas");
+                let ctx =canvas.getContext("2d");
+                ctx.lineWidth = 10;
+                ctx.lineStyle = "red";
+                ctx.beginPath();
+                ctx.moveTo(0,0);
+                ctx.lineTo(800,800);
+                ctx.stroke();
+            })
+        </script>
+    </body>
+</html>
